@@ -11,7 +11,7 @@ possible_inputs = {
 print("\n The following are the possible premises: \n")
 for key, value in possible_inputs.items():
     print(f"{key}. {value}")
-typed_key = input("\n Which one would yo like to start with? \n (Type the number)")
+typed_key = input("\n Which one would you like to start with? \n (Type the number)")
 print("\n Please complete the query \n")
 
 query = input(f"{possible_inputs[typed_key]}")
