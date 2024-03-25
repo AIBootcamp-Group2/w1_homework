@@ -1,3 +1,5 @@
+## AI-Chef
+
 This project tests the OpenAI API’s Chat Completion endpoint. The model used is gpt-3.5-turbo. This AI Chef project contains two scripts that evaluate the performance and capabilities of different prompts. Each script has a detailed and elaborate prompt that gives a unique personality to the AI chef. The prompt responds to these three possible requests from the client:
 
 1. Come up with a dish name given some ingredients. AI Chef responds only with a name.
