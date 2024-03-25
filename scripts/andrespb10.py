@@ -33,19 +33,25 @@ def ap_prompt(instruction: int):
       stream=True,
     )
     collected_messages = []
+    print("")
     for chunk in stream:
         chunk_message = chunk.choices[0].delta.content or ""
         print(chunk_message, end="")
         collected_messages.append(chunk_message)
+    print("")
     messages.append(
         {
             "role": "system",
             "content": "".join(collected_messages)
         }
     )
+    continue_condition = input("\nWould you like to continue this conversation?\n(yes/no)")
+    if continue_condition.lower() == 'no':
+      exit()
     while True:
-        print("\n")
-        user_input = input()
+        user_input = input("\n")
+        if user_input == "quit":
+            break
         messages.append(
             {
                 "role": "user",
@@ -58,6 +64,7 @@ def ap_prompt(instruction: int):
             stream=True,
         )
         collected_messages = []
+        print("")
         for chunk in stream:
             chunk_message = chunk.choices[0].delta.content or ""
             print(chunk_message, end="")
