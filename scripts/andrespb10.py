@@ -20,7 +20,7 @@ system_extra_instrucctions = """
   Try to be as brief as possible. 
 """
 
-def ap_prompt(instruction: int):
+def chef_prompt(instruction: int):
     model = "gpt-3.5-turbo"
     messages=[
         {"role": "system", "content": f"{personality}"},
@@ -45,11 +45,11 @@ def ap_prompt(instruction: int):
             "content": "".join(collected_messages)
         }
     )
-    continue_condition = input("\nWould you like to continue this conversation?\n(yes/no)")
+    continue_condition = input("\nWould you like to continue this conversation?\n(yes/no)-> ")
     if continue_condition.lower() == 'no':
       exit()
     while True:
-        user_input = input("\n")
+        user_input = input("\n-> ")
         if user_input == "quit":
             break
         messages.append(

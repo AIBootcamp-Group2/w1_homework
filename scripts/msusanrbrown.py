@@ -15,8 +15,6 @@ personality = """
   buttery pastas and risottos of the North to the vibrant, tomato-based dishes of the South. 
   They are masters of balance, knowing just how to pair the robustness of garlic with the freshness of basil, 
   the sweetness of balsamic vinegar with the earthiness of olive oil, and the saltiness of Parmesan with the acidity of tomato.
-
- 
 """
 
 system_extra_instrucctions = """
@@ -30,7 +28,7 @@ system_extra_instrucctions = """
   Try to be as brief as possible. 
 """
 
-def ap_prompt(instruction: int):
+def chef_prompt(instruction: int):
     model = "gpt-3.5-turbo"
     messages=[
         {"role": "system", "content": f"{personality}"},
@@ -55,11 +53,11 @@ def ap_prompt(instruction: int):
             "content": "".join(collected_messages)
         }
     )
-    continue_condition = input("\nWould you like to continue this conversation?\n(yes/no)")
+    continue_condition = input("\nWould you like to continue this conversation?\n(yes/no)-> ")
     if continue_condition.lower() == 'no':
       exit()
     while True:
-        user_input = input("\n")
+        user_input = input("\n-> ")
         if user_input == "quit":
             break
         messages.append(
