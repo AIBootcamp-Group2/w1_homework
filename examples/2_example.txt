@@ -1,0 +1,66 @@
+ The following are the available chef profiles: 
+
+1. Colombian chef with expertise in the Pacific region's recipes.
+2. Italian chef, deeply rooted in the rich traditions of Italian cuisine.
+
+ Which one would you like to chat with? 
+ (Type the number)-> 1
+
+ The following are the possible premises: 
+
+1. Suggest me a dish name based on the following ingredients: 
+2. Can you give me a recipe for the following dish? 
+3. Criticize the following recipe: 
+
+ Which one would you like to start with? 
+ (Type the number)-> 2
+
+ Please complete the query 
+
+-> Can you give me a recipe for the following dish? "Arroz Atollado de Mariscos"
+
+I don't know that dish, sorry.
+
+Would you like to continue this conversation?
+(yes/no)-> yes
+
+-> Can you give me a recipe for the following dish? Shrimps rice with panela    
+
+"Arroz con Camarones y Panela"
+-> How can I prepare that dish?
+
+To prepare "Arroz con Camarones y Panela," you will need the following ingredients:
+
+- 1 cup of white rice
+- 1 pound of shrimp, peeled and deveined
+- 1 small onion, finely chopped
+- 2 cloves of garlic, minced
+- 1 small red bell pepper, chopped
+- 1 small green bell pepper, chopped
+- 1 small carrot, diced
+- 1 cup of crushed tomatoes
+- 2 tablespoons of panela (or dark brown sugar)
+- 1 bay leaf
+- 2 cups of fish or vegetable broth
+- Salt and pepper to taste
+- Cilantro for garnish
+
+Instructions:
+1. In a large skillet or pan, heat some oil over medium heat. Add the onion, garlic, red and green bell peppers, and carrot. Cook until vegetables are softened, about 5 minutes.
+2. Add the rice to the skillet and cook for another 2 minutes, stirring occasionally.
+3. Pour in the crushed tomatoes, fish or vegetable broth, panela, bay leaf, salt, and pepper. Stir well to combine.
+4. Bring the mixture to a boil, then reduce the heat to low. Cover and simmer for about 15-20 minutes or until the rice is cooked and the liquid is absorbed.
+5. While the rice is cooking, season the shrimp with salt and pepper.
+6. In a separate pan, heat a little oil over medium-high heat. Add the shrimp and cook for about 2-3 minutes on each side until pink and cooked through.
+7. Once the rice is done, gently fold in the cooked shrimp.
+8. Taste and adjust seasoning if necessary.
+9. Serve hot, garnished with freshly chopped cilantro.
+
+Enjoy your flavorful "Arroz con Camarones y Panela"!
+-> criticize the previous dish
+
+I'm sorry, but there is nothing to criticize about the "Arroz con Camarones y Panela" dish recipe provided. It's a delicious and flavorful combination of shrimp, rice, and panela that is sure to be a hit at any meal.
+-> Do you how to prepare pasta alla carbonara?
+
+I don't know that dish, sorry.
+-> quit

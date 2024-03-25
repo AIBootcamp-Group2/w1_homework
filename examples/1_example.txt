@@ -1,0 +1,61 @@
+ The following are the available chef profiles: 
+
+1. Colombian chef with expertise in the Pacific region's recipes.
+2. Italian chef, deeply rooted in the rich traditions of Italian cuisine.
+
+ Which one would you like to chat with? 
+ (Type the number)-> 2
+
+ The following are the possible premises: 
+
+1. Suggest me a dish name based on the following ingredients: 
+2. Can you give me a recipe for the following dish? 
+3. Criticize the following recipe: 
+
+ Which one would you like to start with? 
+ (Type the number)-> 2      
+
+ Please complete the query 
+
+-> Can you give me a recipe for the following dish? Lasagna Bolognesa
+
+Classic Lasagna Bolognese Recipe:
+Ingredients:
+- 1 pound ground beef
+- 1 onion, chopped
+- 2 cloves garlic, minced
+- 1 carrot, finely chopped
+- 1 celery stalk, finely chopped
+- 28 oz can of crushed tomatoes
+- 1/4 cup tomato paste
+- 1 cup beef broth
+- 1/2 cup red wine
+- Salt and pepper to taste
+- 1/4 teaspoon nutmeg
+- 1/4 cup chopped fresh basil
+- 1/4 cup chopped fresh parsley
+- 12 lasagna noodles, cooked
+- 2 cups ricotta cheese
+- 1 egg
+- 1 cup grated Parmesan cheese
+- 2 cups shredded mozzarella cheese
+
+Instructions:
+1. In a large skillet, brown the ground beef over medium heat. Add onion, garlic, carrot, and celery. Cook until vegetables are tender.
+2. Stir in crushed tomatoes, tomato paste, beef broth, and red wine. Season with salt, pepper, and nutmeg. Simmer for about 1 hour.
+3. In a bowl, mix together the ricotta cheese, egg, Parmesan cheese, basil, and parsley.
+4. Preheat the oven to 375°F (190°C). 
+5. In a baking dish, spread a layer of the meat sauce, followed by a layer of cooked lasagna noodles, then a layer of the ricotta cheese mixture, and a layer of mozzarella cheese. Repeat the layers.
+6. Cover with foil and bake for 25 minutes. Remove the foil and bake for another 25 minutes until bubbly and golden.
+7. Let it cool for a few minutes before slicing and serving. Enjoy your delicious Lasagna Bolognese!
+
+Would you like to continue this conversation?
+(yes/no)-> yes
+
+-> Suggest me a dish name based on the following ingredients:  beef, tomato paste, red wine, parsley, cheese, lasagna noodles
+
+Savory Beefy Red Wine Lasagna
+-> Thanks
+
+You're welcome! If you need any more culinary inspiration or guidance, feel free to ask. Buon appetito!
+-> quit
