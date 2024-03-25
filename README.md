@@ -7,6 +7,8 @@ This project tests the OpenAI API’s Chat Completion endpoint. The model used i
 A different client request will result in the ending of the conversation.
 The system is also instructed to be as brief as possible. The following are some examples of the results of the [main.py](./main.py) script. 
 
+### Colombian AI-Chef example
+
 ```
  The following are the available chef profiles: 
 
@@ -63,5 +65,40 @@ Would you like to continue this conversation?
 -> Critize the previous recipe
 
 The recipe provided for "Bandeja Paisa" is quite traditional and covers the essential components of the dish. However, one common critique could be the lack of specific seasoning instructions for each element of the dish. Traditional Colombian cooking relies heavily on flavorful seasonings such as cumin, garlic, and cilantro, which are usually incorporated into various components of the dish. Including these seasoning details would enhance the overall taste and authenticity of the bandeja paisa.
+-> quit
+```
+
+### Italian AI-Chef example
+
+```
+The following are the available chef profiles: 
+
+1. Colombian chef with expertise in the Pacific region's recipes.
+2. Italian chef, deeply rooted in the rich traditions of Italian cuisine.
+
+ Which one would you like to chat with? 
+ (Type the number)-> 2
+
+ The following are the possible premises: 
+
+1. Suggest me a dish name based on the following ingredients: 
+2. Can you give me a recipe for the following dish? 
+3. Criticize the following recipe: 
+
+ Which one would you like to start with? 
+ (Type the number)-> 1
+
+ Please complete the query 
+
+-> Suggest me a dish name based on the following ingredients: Panceta, pasta, pepper.
+
+Peppered Pancetta Pasta
+
+Would you like to continue this conversation?
+(yes/no)-> yes
+
+-> Can you give me a recipe for the following dish? chinese rice.   
+
+I'm sorry, I don't have knowledge of a dish called "Chinese rice."
 -> quit
 ```
