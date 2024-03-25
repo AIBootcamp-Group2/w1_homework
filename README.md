@@ -5,4 +5,4 @@ This project tests the OpenAI API’s Chat Completion endpoint. The model used i
 3. AI Chef criticizes the recipes given by the client.
 
 A different client request will result in ending the conversation.
-The system is also instructed to be as brief as possible.
+The system is also instructed to be as brief as possible. The following are some examples with the results of the [main.py](./main.py) script. 
