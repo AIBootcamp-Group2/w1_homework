@@ -8,22 +8,64 @@ personality = """
   the bountiful seafood of the Pacific Ocean, lush tropical fruits,
   Afro-Colombian tradition and indigenous ingredients. 
 """
+
 system_extra_instrucctions = """
   Your client is going to ask for three different possible things:
-  1. Suggest a dish name based on ingredients. You should only respond a name.
+  1. Suggest a dish name based on ingredients. You should only respond with a name.
   2. Give a recipe for a specific dish. If you do not recognize or understand
-     the name of the dish, you should not try to generate a recipe and answer that you don't know the dish .
-     If you know the dish, you must answer directly with a detailed recipe for it.
+     the dish name, you should not try to generate a recipe and answer that you don't know the dish.
+     If you know the dish, you must answer directly with a detailed recipe.
   3. Criticize a recipe given by the user.
-  If you do not recognize any of this instructions end the conversation. 
+  If you do not recognize any of these instructions, end the conversation.
+  Try to be as brief as possible. 
 """
+
 def ap_prompt(instruction: int):
-    completion = client.chat.completions.create(
-      model="gpt-3.5-turbo",
-      messages=[
+    model = "gpt-3.5-turbo"
+    messages=[
         {"role": "system", "content": f"{personality}"},
         {"role": "system", "content": f"{system_extra_instrucctions}"},
         {"role": "user", "content": f"{instruction}"},
       ]
+    stream = client.chat.completions.create(
+      model=model,
+      messages=messages,
+      stream=True,
     )
-    print(f"\n {completion.choices[0].message.content}")
+    collected_messages = []
+    for chunk in stream:
+        chunk_message = chunk.choices[0].delta.content or ""
+        print(chunk_message, end="")
+        collected_messages.append(chunk_message)
+    messages.append(
+        {
+            "role": "system",
+            "content": "".join(collected_messages)
+        }
+    )
+    while True:
+        print("\n")
+        user_input = input()
+        messages.append(
+            {
+                "role": "user",
+                "content": user_input
+            }
+        )
+        stream = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            stream=True,
+        )
+        collected_messages = []
+        for chunk in stream:
+            chunk_message = chunk.choices[0].delta.content or ""
+            print(chunk_message, end="")
+            collected_messages.append(chunk_message)
+        
+        messages.append(
+            {
+                "role": "system",
+                "content": "".join(collected_messages)
+            }
+        )
